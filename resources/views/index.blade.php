@@ -11,7 +11,9 @@
         <div class='posts'>
            @foreach ($posts as $post)
                 <div class='post'>
-                    <h2 class='title'>タイトル：{{ $post->title }}</h2>
+                    <h2 class='title'>
+                        <a href="/posts/{{ $post->id }}">タイトル：{{ $post->title }}</a>
+                    </h2>
                     <h3 class='name'>店名：{{ $post->name }}</h3>
                     <p class='address'>住所：{{ $post->address }}</p>
                     <p class='tel'>電話番号：{{ $post->tel }}</p>
